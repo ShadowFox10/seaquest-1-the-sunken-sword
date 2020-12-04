@@ -1,0 +1,33 @@
+{
+    "name": "SeaQuest 1: The sunken Sword",
+    "description": "",
+    "dependencies": {
+        "device": "*",
+        "keyboard": "*",
+        "controller": "*",
+        "storyboard": "*",
+        "corgio": "*",
+        "animation": "*",
+        "color-coded-tilemap": "*",
+        "mouse": "*"
+    },
+    "files": [
+        "main.blocks",
+        "main.ts",
+        "README.md",
+        "main.py",
+        "tilemap.g.jres",
+        "tilemap.g.ts"
+    ],
+    "testFiles": [
+        "test.ts"
+    ],
+    "targetVersions": {
+        "target": "1.2.10",
+        "targetId": "arcade"
+    },
+    "supportedTargets": [
+        "arcade"
+    ],
+    "preferredEditor": "blocksprj"
+}
