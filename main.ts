@@ -1,6 +1,9 @@
 namespace SpriteKind {
     export const object = SpriteKind.create()
 }
+controller.up.onEvent(ControllerButtonEvent.Pressed, function () {
+    Jack.vy = -150
+})
 controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
     animation.runImageAnimation(
     Jack,
@@ -1226,6 +1229,10 @@ controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
     )
     Jack.x += 10
 })
+controller.left.onEvent(ControllerButtonEvent.Pressed, function () {
+    Jack.image.flipX()
+    pause(1000)
+})
 controller.right.onEvent(ControllerButtonEvent.Released, function () {
     animation.stopAnimation(animation.AnimationTypes.All, Jack)
     Jack.setImage(img`
@@ -1871,6 +1878,8 @@ for (let value of tiles.getTilesByType(myTiles.tile1)) {
     tiles.placeOnRandomTile(Jack, myTiles.tile1)
     tiles.setTileAt(value, myTiles.transparency16)
 }
-controller.moveSprite(Jack)
+let statusbar = statusbars.create(20, 4, StatusBarKind.Health)
+statusbar.attachToSprite(Jack)
+controller.moveSprite(Jack, 100, 0)
 Jack.ay = 350
 scene.cameraFollowSprite(Jack)
