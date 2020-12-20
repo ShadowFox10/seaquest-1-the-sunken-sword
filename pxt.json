@@ -15,7 +15,11 @@
         "pxt-status-bar": "github:jwunderl/pxt-status-bar#v0.3.3",
         "radio": "*",
         "Timers": "github:microsoft/arcade-timers#v1.1.0",
-        "darts": "*"
+        "darts": "*",
+        "settings-blocks": "github:microsoft/pxt-settings-blocks#v1.0.0",
+        "Color Fading": "github:jwunderl/pxt-color#v0.2.0",
+        "tilemaps": "github:microsoft/pxt-tilemaps#v1.10.0",
+        "arcade-text": "github:microsoft/arcade-text#v1.3.0"
     },
     "files": [
         "main.blocks",
